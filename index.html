@@ -1,245 +1,238 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="utf-8" />
-<link rel="stylesheet" href="style.css">
-<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css'>
-<link rel="icon" type="image/x-icon" href="icono.ico">
-<meta name="viewport" content="width=device-width,initial-scale=1" />
-<title>TokkenU</title>
+  <meta charset="UTF-8">
+  <title>Organigrama Tokken Security</title>
+  <link rel="stylesheet" href="style.css">
 
 </head>
-
 <body>
+  <h1>Organigrama Tokken Security – Cargos</h1>
 
-<!-- MENU PRINCIPAL -->
-<div class="header-wrap">
-  <div class="page">
-    <div class="header">
-      <div class="logo-bg"></div>
-      <a class="logo" href="#">
-        <img src="logo tokkenu.png" alt="TokenU"> 
-      </a>
-      <nav class="navbar">
-        <a href="#">Inicio</a>
-        <a href="#">Cursos</a>
-        <a href="#">Empresas</a>
-      </nav>
-      <div style="display:flex; align-items:center; gap:10px; position:relative;">
-        <button class="btn-ingresar">Ingresar</button>
-        <button class="hamb" id="hamb" aria-label="Menú">≡</button>
-        <div class="mobile-modal-bg" id="modalBg"></div>
-        <div class="mobile-panel" id="mPanel" aria-hidden="true">
-          <a href="#">Inicio</a>
-          <a href="#">Cursos</a>
-          <a href="#">Empresas</a>
-          <div class="sep"></div>
-          <a href="#">Ingresar</a>
-        </div>
-      </div>
-      <div class="chevron-img">
-        <img src="Mesa de trabajo 1.png" alt="Chevron decorativo">
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- CARUCEL -->
-<div class="page">
-  <section class="hero">
-    <div class="carousel" id="car">
-      <div class="carousel-track" id="track">
-        <div class="carousel-slide"><img src="https://www.allthewonders.com/wp-content/uploads/2016/12/1200px-x-360px-%E2%80%93-Banner-Image-5.png" alt=""></div>
-        <div class="carousel-slide"><img src="https://www.allthewonders.com/wp-content/uploads/2017/01/1200px-x-360px-%E2%80%93-Banner-Image-5.png" alt=""></div>
-        <div class="carousel-slide"><img src="https://www.allthewonders.com/wp-content/uploads/2016/12/1200px-x-360px-%E2%80%93-Banner-Image-2.png" alt=""></div>
-        <!-- clone para loop suave -->
-        <div class="carousel-slide"><img src="https://www.allthewonders.com/wp-content/uploads/2016/12/1200px-x-360px-%E2%80%93-Banner-Image-5.png" alt=""></div>
-      </div>
-      <div class="carousel-dots" id="dots"></div>
-    </div>
-  </section>
-</div>
-
-<!-- ICONOS -->
-<div class="page section">
-  <div class="grid-icons">
-    <div class="iconCard">
-      <div class="ic">🎓</div>
-      <b>Cursos activos</b>
-    </div>
-    <div class="iconCard">
-      <div class="ic">🏆</div>
-      <b>Reconocimientos</b>
-    </div>
-    <div class="iconCard">
-      <div class="ic">➕</div>
-      <b>Turnos</b>
-    </div>
-    <div class="iconCard">
-      <div class="ic">🛡️</div>
-      <b>Noticias</b>
-    </div>
-  </div>
-</div>
-
-<!-- TOKKENU -->
-<div class="page section">
-  <div class="split-2">
-    <article class="card">
-      <h2 style="margin:0 0 8px 0;">¿Qué es TokkenU?</h2>
-      <p style="margin:0 0 8px 0; color:var(--c-text-soft)">
-        Campus virtual especializado en formación para el sector de seguridad. Contenido nuevo cada mes, retos y reconocimientos.
-      </p>
-      <ul style="margin:0 0 8px 14px; color:var(--c-text-soft)">
-        <li>Punto clave 1</li>
-        <li>Punto clave 2</li>
-        <li>Punto clave 3</li>
-      </ul>
-      <a class="btn-ghost" href="#">Ver más</a>
-    </article>
-
-    <aside class="poster">
-      <img src="Edificio TokkenU 1.png" alt="Afiche">
-    </aside>
-  </div>
-</div>
-
-<!-- INFORMACIOPN 1 -->
-<div class="page section">
-  <div class="split-2b">
-    <article class="card">
-      <h3 style="margin:0 0 6px 0;">Título destacado</h3>
-      <p style="margin:0 0 8px 0; color:var(--c-text-soft)">Breve descripción de la iniciativa o anuncio. Mantén 2-3 líneas para que respire y sea fácil de leer.</p>
-      <ul style="margin:0 0 12px 14px; color:var(--c-text-soft)">
-        <li>Punto clave 1</li><li>Punto clave 2</li><li>Punto clave 3</li>
-      </ul>
-      <a class="btn-ghost" href="#">Ver más</a>
-    </article>
-
-    <article class="card media-card">
-      <img src="Carnet estudiante.png" alt="">
-    </article>
-  </div>
-</div>
-
-<!-- INFORMACION 2 -->
-<div class="page section">
-  <div class="split-2c">
-    <article class="card media-card">
-      <img src="Edificio TokkenU 2.png" alt="">
-    </article>
-
-    <article class="card">
-      <h3 style="margin:0 0 6px 0;">Bloque informativo</h3>
-      <p style="margin:0 0 8px 0; color:var(--c-text-soft)">Noticias, campañas o comunicados. Ideal para resúmenes mensuales (reconocimientos, calendario, convocatorias, etc.).</p>
-      <a class="btn-primary" href="#">Acción principal</a>
-    </article>
-  </div>
-</div>
-
-<!-- = 3 MINI CARTAS  -->
-<div class="page section">
-  <div class="grid-3">
-    <article class="mini">
-      <div class="badge">🎯</div>
-      <h4 style="margin:0 0 6px 0">Objetivo</h4>
-      <p style="margin:0; color:var(--c-text-soft)">Descripción breve del objetivo o resultado esperado.</p>
-      <div style="margin-top:10px">
-        <a class="btn-ghost" href="#">Conoce más →</a>
-      </div>
-    </article>
-
-    <article class="mini">
-      <div class="badge">📅</div>
-      <h4 style="margin:0 0 6px 0">Calendario</h4>
-      <p style="margin:0; color:var(--c-text-soft)">Fechas clave del mes: actividades, cortes y anuncios.</p>
-      <div style="margin-top:10px">
-        <a class="btn-ghost" href="#">Ver calendario →</a>
-      </div>
-    </article>
-
-    <article class="mini">
-      <div class="badge">🏅</div>
-      <h4 style="margin:0 0 6px 0">Reconocimientos</h4>
-      <p style="margin:0; color:var(--c-text-soft)">Guardas destacados y logros recientes de la comunidad.</p>
-      <div style="margin-top:10px">
-        <a class="btn-ghost" href="#">Ver destacados →</a>
-      </div>
-    </article>
-  </div>
-</div>
-
-<!-- ====== FOOTER ====== -->
-<div class="page">
-  <footer class="footer">
-    <div class="inner">
-      <div class="footer-top">
-       
-
-        <div class="socials">
-  
-
-
-  <div class="wrapper">
-    <div class="icon Github">
-      <div class="tooltip">Github</div>
-      <span><i class="fab fa-github"></i></span>
-    </div>
-    <div class="icon Facebook">
-      <div class="tooltip">Facebook</div>
-      <span><i class="fab fa-facebook"></i></span>
-    </div>
-    <div class="icon instagram">
-      <div class="tooltip">Instagram</div>
-      <span><i class="fab fa-instagram"></i></span>
-    </div>
-
-    <div class="icon youtube">
-      <div class="tooltip">Youtube</div>
-      <span><i class="fab fa-youtube"></i></span>
-    </div>
-  </div>
-
-
+  <div class="tree">
+    <ul>
+      <li>
+        <!-- Nivel 0: Empresa -->
+        <div class="box company">
+          <h3>Tokken Security Co. Ltda.</h3>
+          <span>Estructura organizacional 2025</span>
         </div>
 
-        <div class="footer-cols">
-          <div>
-            <h4>TokkenU</h4>
-            <div><a href="#">Quiénes somos</a></div>
-            <div><a href="#">Nuestros cursos</a></div>
-            <div><a href="#">Equipo de formación</a></div>
-            <div><a href="#">Testimonios</a></div>
-          </div>
+        <ul>
+          <!-- Nivel 1: Gerencia general (CEO) -->
+          <li>
+            <div class="box level1">
+              <h3>Gerencia General (CEO)</h3>
+              <span>Máxima autoridad de la organización</span>
+            </div>
 
-          <div>
-            <h4>Documentos</h4>
-            <div><a href="#">Política de privacidad</a></div>
-            <div><a href="#">Normatividad SST</a></div>
-            <div><a href="#">Código de Ética</a></div>
-            <div><a href="#">Resoluciones</a></div>
-          </div>
+            <ul>
+              <!-- Dirección Financiera – PSO -->
+              <li>
+                <div class="box level2 ceo-side">
+                  <h3>Dirección Financiera – PSO</h3>
+                </div>
+                <ul>
+                  <li>
+                    <div class="box level3">
+                      <h3>Gerencia Administrativa – PSO</h3>
+                    </div>
+                    <ul>
+                      <li>
+                        <div class="box level3">
+                          <h3>Asistencia Administrativa – PSO</h3>
+                        </div>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <div class="box level3">
+                      <h3>Gerencia de Nómina – PSO</h3>
+                    </div>
+                    <ul>
+                      <li>
+                        <div class="box level3">
+                          <h3>Senior Nómina – PSO</h3>
+                        </div>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <div class="box level3">
+                      <h3>Contaduría – PSO</h3>
+                    </div>
+                    <ul>
+                      <li>
+                        <div class="box level3">
+                          <h3>Contaduría Senior – PSO</h3>
+                        </div>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
 
-          <div>
-            <h4>Contacto</h4>
-            <div>Bogotá, Colombia</div>
-            <div>+57 300 000 0000</div>
-            <div><a href="mailto:soporte@tokkenu.com.co">soporte@tokkenu.com.co</a></div>
-          </div>
-        </div>
-      </div>
+              <!-- Coordinación de Tecnología -->
+              <li>
+                <div class="box level2 ceo-side">
+                  <h3>Coordinación de Tecnología</h3>
+                </div>
+              </li>
 
-      <div class="footer-bottom">
-        © 2025 TokkenU — Desarrollado por Tokken Security
-      </div>
-    </div>
-  </footer>
-</div>
+              <!-- Dirección Comercial -->
+              <li>
+                <div class="box level2 ceo-side">
+                  <h3>Dirección Comercial</h3>
+                </div>
+                <ul>
+                  <li>
+                    <div class="box level3">
+                      <h3>Consultoría Inbound Marketing y SEO – PSO</h3>
+                    </div>
+                  </li>
+                </ul>
+              </li>
 
+              <!-- Dirección de Operaciones -->
+              <li>
+                <div class="box level2 ceo-side">
+                  <h3>Dirección de Operaciones</h3>
+                </div>
+                <ul>
+                  <li>
+                    <div class="box level3">
+                      <h3>Coordinación de Operaciones Jr.</h3>
+                    </div>
+                    <ul>
+                      <li>
+                        <div class="box level3">
+                          <h3>Supervisores de Servicio</h3>
+                        </div>
+                        <ul>
+                          <li>
+                            <div class="box level3">
+                              <h3>Coordinadores / Supervisores de Puesto</h3>
+                            </div>
+                            <ul>
+                              <li>
+                                <div class="box level3">
+                                  <h3>OMT’s</h3>
+                                </div>
+                                <ul>
+                                  <li>
+                                    <div class="box level3">
+                                      <h3>Oficiales / Guardas de Seguridad</h3>
+                                    </div>
+                                  </li>
+                                </ul>
+                              </li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
 
+              <!-- Dirección de Consultoría -->
+              <li>
+                <div class="box level2 ceo-side">
+                  <h3>Dirección de Consultoría</h3>
+                </div>
+                <ul>
+                  <li>
+                    <div class="box level3">
+                      <h3>Consultor / Consultoría especializada</h3>
+                    </div>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
 
+          <!-- Nivel 1: Subgerencia -->
+          <li>
+            <div class="box level1">
+              <h3>Subgerencia</h3>
+              <span>Dir. Talento Humano y Cultura Organizacional<br>
+                    y Dir. Administrativa y de Sistemas de Gestión</span>
+            </div>
+
+            <ul>
+              <!-- Dirección de Talento Humano y Cultura Organizacional -->
+              <li>
+                <div class="box level2 sub-side">
+                  <h3>Dirección de Talento Humano y Cultura Organizacional</h3>
+                </div>
+                <ul>
+                  <li>
+                    <div class="box level3">
+                      <h3>Coordinación de Talento Humano y Cultura Organizacional</h3>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="box level3">
+                      <h3>Coordinación de Campus Virtual</h3>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="box level3">
+                      <h3>Coordinación de Comunicación Interna<br>y Contenido Digital</h3>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="box level3">
+                      <h3>Consultoría Legal Laboral – PSO</h3>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="box level3">
+                      <h3>Consultoría E-Learning – PSO</h3>
+                    </div>
+                  </li>
+                </ul>
+              </li>
+
+              <!-- Dirección Administrativa y de Sistemas de Gestión -->
+              <li>
+                <div class="box level2 sub-side">
+                  <h3>Dirección Administrativa y de Sistemas de Gestión</h3>
+                </div>
+                <ul>
+                  <li>
+                    <div class="box level3">
+                      <h3>Consultoría Responsable SG-SST – PSO</h3>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="box level3">
+                      <h3>Consultoría en Protección de Datos – PSO</h3>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="box level3">
+                      <h3>Consultoría en Gestión Documental – PSO</h3>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="box level3">
+                      <h3>Oficina de Cumplimiento SARLAFT y PTEE – PSO</h3>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="box level3">
+                      <h3>Auxiliar de Servicios Generales – PSO</h3>
+                    </div>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </div>
 </body>
-<script src="script.js"></script>
 </html>
-
-
