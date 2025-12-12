@@ -1,238 +1,347 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta charset="UTF-8">
-  <title>Organigrama Tokken Security</title>
+  <title>Organigrama Tokken Security (Vertical Interactivo)</title>
   <link rel="stylesheet" href="style.css">
 
 </head>
+
 <body>
-  <h1>Organigrama Tokken Security – Cargos</h1>
+  <h1>Organigrama Tokken Security</h1>
+  <p class="hint">Haz clic en las cajas con el círculo ▶ para desplegar la estructura.</p>
 
   <div class="tree">
-    <ul>
-      <li>
-        <!-- Nivel 0: Empresa -->
-        <div class="box company">
+    <div class="node root">
+      <!-- Tokken -->
+      <div class="box company">
+        <div class="toggle-icon" aria-hidden="true">▶</div>
+        <div class="box-text">
           <h3>Tokken Security Co. Ltda.</h3>
-          <span>Estructura organizacional 2025</span>
+          <span class="subtitle">Estructura organizacional 2025</span>
         </div>
+      </div>
 
-        <ul>
-          <!-- Nivel 1: Gerencia general (CEO) -->
-          <li>
-            <div class="box level1">
+      <div class="children">
+        <!-- Gerencia General -->
+        <div class="node">
+          <div class="box level1">
+            <div class="toggle-icon" aria-hidden="true">▶</div>
+            <div class="box-text">
               <h3>Gerencia General (CEO)</h3>
-              <span>Máxima autoridad de la organización</span>
+              <span class="subtitle">Máxima autoridad de la organización</span>
             </div>
+          </div>
 
-            <ul>
-              <!-- Dirección Financiera – PSO -->
-              <li>
-                <div class="box level2 ceo-side">
+          <div class="children">
+            <!-- Dirección Financiera – PSO -->
+            <div class="node">
+              <div class="box level2 ceo-side">
+                <div class="toggle-icon" aria-hidden="true">▶</div>
+                <div class="box-text">
                   <h3>Dirección Financiera – PSO</h3>
                 </div>
-                <ul>
-                  <li>
-                    <div class="box level3">
+              </div>
+
+              <div class="children">
+                <div class="node">
+                  <div class="box level3">
+                    <div class="toggle-icon" aria-hidden="true">▶</div>
+                    <div class="box-text">
                       <h3>Gerencia Administrativa – PSO</h3>
                     </div>
-                    <ul>
-                      <li>
-                        <div class="box level3">
+                  </div>
+                  <div class="children">
+                    <div class="node">
+                      <div class="box level3 leaf">
+                        <div class="toggle-icon" aria-hidden="true">▶</div>
+                        <div class="box-text">
                           <h3>Asistencia Administrativa – PSO</h3>
                         </div>
-                      </li>
-                    </ul>
-                  </li>
-                  <li>
-                    <div class="box level3">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="node">
+                  <div class="box level3">
+                    <div class="toggle-icon" aria-hidden="true">▶</div>
+                    <div class="box-text">
                       <h3>Gerencia de Nómina – PSO</h3>
                     </div>
-                    <ul>
-                      <li>
-                        <div class="box level3">
+                  </div>
+                  <div class="children">
+                    <div class="node">
+                      <div class="box level3 leaf">
+                        <div class="toggle-icon" aria-hidden="true">▶</div>
+                        <div class="box-text">
                           <h3>Senior Nómina – PSO</h3>
                         </div>
-                      </li>
-                    </ul>
-                  </li>
-                  <li>
-                    <div class="box level3">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="node">
+                  <div class="box level3">
+                    <div class="toggle-icon" aria-hidden="true">▶</div>
+                    <div class="box-text">
                       <h3>Contaduría – PSO</h3>
                     </div>
-                    <ul>
-                      <li>
-                        <div class="box level3">
+                  </div>
+                  <div class="children">
+                    <div class="node">
+                      <div class="box level3 leaf">
+                        <div class="toggle-icon" aria-hidden="true">▶</div>
+                        <div class="box-text">
                           <h3>Contaduría Senior – PSO</h3>
                         </div>
-                      </li>
-                    </ul>
-                  </li>
-                </ul>
-              </li>
-
-              <!-- Coordinación de Tecnología -->
-              <li>
-                <div class="box level2 ceo-side">
-                  <h3>Coordinación de Tecnología</h3>
-                </div>
-              </li>
-
-              <!-- Dirección Comercial -->
-              <li>
-                <div class="box level2 ceo-side">
-                  <h3>Dirección Comercial</h3>
-                </div>
-                <ul>
-                  <li>
-                    <div class="box level3">
-                      <h3>Consultoría Inbound Marketing y SEO – PSO</h3>
+                      </div>
                     </div>
-                  </li>
-                </ul>
-              </li>
-
-              <!-- Dirección de Operaciones -->
-              <li>
-                <div class="box level2 ceo-side">
-                  <h3>Dirección de Operaciones</h3>
+                  </div>
                 </div>
-                <ul>
-                  <li>
-                    <div class="box level3">
-                      <h3>Coordinación de Operaciones Jr.</h3>
-                    </div>
-                    <ul>
-                      <li>
-                        <div class="box level3">
-                          <h3>Supervisores de Servicio</h3>
-                        </div>
-                        <ul>
-                          <li>
-                            <div class="box level3">
-                              <h3>Coordinadores / Supervisores de Puesto</h3>
-                            </div>
-                            <ul>
-                              <li>
-                                <div class="box level3">
-                                  <h3>OMT’s</h3>
-                                </div>
-                                <ul>
-                                  <li>
-                                    <div class="box level3">
-                                      <h3>Oficiales / Guardas de Seguridad</h3>
-                                    </div>
-                                  </li>
-                                </ul>
-                              </li>
-                            </ul>
-                          </li>
-                        </ul>
-                      </li>
-                    </ul>
-                  </li>
-                </ul>
-              </li>
 
-              <!-- Dirección de Consultoría -->
-              <li>
-                <div class="box level2 ceo-side">
-                  <h3>Dirección de Consultoría</h3>
-                </div>
-                <ul>
-                  <li>
-                    <div class="box level3">
-                      <h3>Consultor / Consultoría especializada</h3>
-                    </div>
-                  </li>
-                </ul>
-              </li>
-            </ul>
-          </li>
-
-          <!-- Nivel 1: Subgerencia -->
-          <li>
-            <div class="box level1">
-              <h3>Subgerencia</h3>
-              <span>Dir. Talento Humano y Cultura Organizacional<br>
-                    y Dir. Administrativa y de Sistemas de Gestión</span>
+              </div>
             </div>
 
-            <ul>
-              <!-- Dirección de Talento Humano y Cultura Organizacional -->
-              <li>
-                <div class="box level2 sub-side">
+            <!-- Coordinación de Tecnología -->
+            <div class="node">
+              <div class="box level2 ceo-side leaf">
+                <div class="toggle-icon" aria-hidden="true">▶</div>
+                <div class="box-text">
+                  <h3>Coordinación de Tecnología</h3>
+                </div>
+              </div>
+            </div>
+
+            <!-- Dirección Comercial -->
+            <div class="node">
+              <div class="box level2 ceo-side">
+                <div class="toggle-icon" aria-hidden="true">▶</div>
+                <div class="box-text">
+                  <h3>Dirección Comercial</h3>
+                </div>
+              </div>
+              <div class="children">
+                <div class="node">
+                  <div class="box level3 leaf">
+                    <div class="toggle-icon" aria-hidden="true">▶</div>
+                    <div class="box-text">
+                      <h3>Consultoría Inbound Marketing y SEO – PSO</h3>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Dirección de Operaciones -->
+            <div class="node">
+              <div class="box level2 ceo-side">
+                <div class="toggle-icon" aria-hidden="true">▶</div>
+                <div class="box-text">
+                  <h3>Dirección de Operaciones</h3>
+                </div>
+              </div>
+              <div class="children">
+                <div class="node">
+                  <div class="box level3">
+                    <div class="toggle-icon" aria-hidden="true">▶</div>
+                    <div class="box-text">
+                      <h3>Coordinación de Operaciones Jr.</h3>
+                    </div>
+                  </div>
+                  <div class="children">
+                    <div class="node">
+                      <div class="box level3">
+                        <div class="toggle-icon" aria-hidden="true">▶</div>
+                        <div class="box-text">
+                          <h3>Supervisores de Servicio</h3>
+                        </div>
+                      </div>
+                      <div class="children">
+                        <div class="node">
+                          <div class="box level3">
+                            <div class="toggle-icon" aria-hidden="true">▶</div>
+                            <div class="box-text">
+                              <h3>Coordinadores / Supervisores de Puesto</h3>
+                            </div>
+                          </div>
+                          <div class="children">
+                            <div class="node">
+                              <div class="box level3">
+                                <div class="toggle-icon" aria-hidden="true">▶</div>
+                                <div class="box-text">
+                                  <h3>OMT’s</h3>
+                                </div>
+                              </div>
+                              <div class="children">
+                                <div class="node">
+                                  <div class="box level3 leaf">
+                                    <div class="toggle-icon" aria-hidden="true">▶</div>
+                                    <div class="box-text">
+                                      <h3>Oficiales / Guardas de Seguridad</h3>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Dirección de Consultoría -->
+            <div class="node">
+              <div class="box level2 ceo-side">
+                <div class="toggle-icon" aria-hidden="true">▶</div>
+                <div class="box-text">
+                  <h3>Dirección de Consultoría</h3>
+                </div>
+              </div>
+              <div class="children">
+                <div class="node">
+                  <div class="box level3 leaf">
+                    <div class="toggle-icon" aria-hidden="true">▶</div>
+                    <div class="box-text">
+                      <h3>Consultoría especializada</h3>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Subgerencia -->
+        <div class="node">
+          <div class="box level1">
+            <div class="toggle-icon" aria-hidden="true">▶</div>
+            <div class="box-text">
+              <h3>Subgerencia</h3>
+              <span class="subtitle">Talento Humano y Sistemas de Gestión</span>
+            </div>
+          </div>
+
+          <div class="children">
+            <!-- Dirección TH y Cultura -->
+            <div class="node">
+              <div class="box level2 sub-side">
+                <div class="toggle-icon" aria-hidden="true">▶</div>
+                <div class="box-text">
                   <h3>Dirección de Talento Humano y Cultura Organizacional</h3>
                 </div>
-                <ul>
-                  <li>
-                    <div class="box level3">
+              </div>
+              <div class="children">
+                <div class="node">
+                  <div class="box level3 leaf">
+                    <div class="toggle-icon" aria-hidden="true">▶</div>
+                    <div class="box-text">
                       <h3>Coordinación de Talento Humano y Cultura Organizacional</h3>
                     </div>
-                  </li>
-                  <li>
-                    <div class="box level3">
+                  </div>
+                </div>
+                <div class="node">
+                  <div class="box level3 leaf">
+                    <div class="toggle-icon" aria-hidden="true">▶</div>
+                    <div class="box-text">
                       <h3>Coordinación de Campus Virtual</h3>
                     </div>
-                  </li>
-                  <li>
-                    <div class="box level3">
-                      <h3>Coordinación de Comunicación Interna<br>y Contenido Digital</h3>
+                  </div>
+                </div>
+                <div class="node">
+                  <div class="box level3 leaf">
+                    <div class="toggle-icon" aria-hidden="true">▶</div>
+                    <div class="box-text">
+                      <h3>Coordinación de Comunicación Interna y Contenido Digital</h3>
                     </div>
-                  </li>
-                  <li>
-                    <div class="box level3">
+                  </div>
+                </div>
+                <div class="node">
+                  <div class="box level3 leaf">
+                    <div class="toggle-icon" aria-hidden="true">▶</div>
+                    <div class="box-text">
                       <h3>Consultoría Legal Laboral – PSO</h3>
                     </div>
-                  </li>
-                  <li>
-                    <div class="box level3">
+                  </div>
+                </div>
+                <div class="node">
+                  <div class="box level3 leaf">
+                    <div class="toggle-icon" aria-hidden="true">▶</div>
+                    <div class="box-text">
                       <h3>Consultoría E-Learning – PSO</h3>
                     </div>
-                  </li>
-                </ul>
-              </li>
+                  </div>
+                </div>
+              </div>
+            </div>
 
-              <!-- Dirección Administrativa y de Sistemas de Gestión -->
-              <li>
-                <div class="box level2 sub-side">
+            <!-- Dirección Adm. y Sistemas de Gestión -->
+            <div class="node">
+              <div class="box level2 sub-side">
+                <div class="toggle-icon" aria-hidden="true">▶</div>
+                <div class="box-text">
                   <h3>Dirección Administrativa y de Sistemas de Gestión</h3>
                 </div>
-                <ul>
-                  <li>
-                    <div class="box level3">
+              </div>
+              <div class="children">
+                <div class="node">
+                  <div class="box level3 leaf">
+                    <div class="toggle-icon" aria-hidden="true">▶</div>
+                    <div class="box-text">
                       <h3>Consultoría Responsable SG-SST – PSO</h3>
                     </div>
-                  </li>
-                  <li>
-                    <div class="box level3">
+                  </div>
+                </div>
+                <div class="node">
+                  <div class="box level3 leaf">
+                    <div class="toggle-icon" aria-hidden="true">▶</div>
+                    <div class="box-text">
                       <h3>Consultoría en Protección de Datos – PSO</h3>
                     </div>
-                  </li>
-                  <li>
-                    <div class="box level3">
+                  </div>
+                </div>
+                <div class="node">
+                  <div class="box level3 leaf">
+                    <div class="toggle-icon" aria-hidden="true">▶</div>
+                    <div class="box-text">
                       <h3>Consultoría en Gestión Documental – PSO</h3>
                     </div>
-                  </li>
-                  <li>
-                    <div class="box level3">
+                  </div>
+                </div>
+                <div class="node">
+                  <div class="box level3 leaf">
+                    <div class="toggle-icon" aria-hidden="true">▶</div>
+                    <div class="box-text">
                       <h3>Oficina de Cumplimiento SARLAFT y PTEE – PSO</h3>
                     </div>
-                  </li>
-                  <li>
-                    <div class="box level3">
+                  </div>
+                </div>
+                <div class="node">
+                  <div class="box level3 leaf">
+                    <div class="toggle-icon" aria-hidden="true">▶</div>
+                    <div class="box-text">
                       <h3>Auxiliar de Servicios Generales – PSO</h3>
                     </div>
-                  </li>
-                </ul>
-              </li>
-            </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
 
-          </li>
-        </ul>
-      </li>
-    </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
   </div>
+
+
 </body>
+
 </html>
