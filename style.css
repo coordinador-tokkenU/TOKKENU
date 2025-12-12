@@ -1,3 +1,4 @@
+    /* General */
     * {
       box-sizing: border-box;
     }
@@ -12,126 +13,134 @@
 
     h1 {
       text-align: center;
-      margin-bottom: 2rem;
+      margin-bottom: 1.2rem;
       font-family: "Avant Garde", "Century Gothic", Arial, sans-serif;
       color: #0b3c5d;
       letter-spacing: .05em;
-      font-size: 1.4rem;
+      font-size: 1.3rem;
     }
 
-    /* ---------- ÁRBOL BÁSICO ---------- */
+    .hint {
+      text-align: center;
+      font-size: .85rem;
+      color: #4b5563;
+      margin-bottom: 1rem;
+    }
 
     .tree {
-      width: 100%;
-      overflow-x: auto;
-      padding-bottom: 2rem;
+      max-width: 900px;
+      margin: 0 auto 2rem auto;
+      padding: 0 1rem;
     }
 
-    .tree ul {
-      padding-top: 20px;
+    /* Estructura vertical */
+    .node {
       position: relative;
-      padding-left: 0;
-      white-space: nowrap;
+      margin: .4rem 0;
     }
 
-    .tree li {
-      list-style-type: none;
-      margin: 0 auto;
+    .node.root {
       text-align: center;
-      position: relative;
-      padding: 20px 5px 0 5px;
-      display: inline-block;
-      vertical-align: top;
     }
 
-    /* líneas horizontales arriba de cada li */
-    .tree li::before,
-    .tree li::after {
+    .children {
+      margin-top: .4rem;
+      padding-left: .8rem;
+      border-left: 2px solid rgba(11, 60, 93, 0.25);
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: .4rem;
+      width: fit-content;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .root>.children {
+      padding-left: 0;
+      border-left: none;
+      align-items: center;
+    }
+
+    .root>.children>.node::before {
+      content: none;
+    }
+
+    .node:not(.root)::before {
       content: "";
       position: absolute;
-      top: 0;
-      border-top: 2px solid #0b3c5d;
-      width: 50%;
-      height: 20px;
+      left: -0.8rem;
+      top: 1.3rem;
+      width: 0.8rem;
+      height: 2px;
+      background: rgba(11, 60, 93, 0.25);
     }
 
-    .tree li::before {
-      right: 50%;
-    }
-
-    .tree li::after {
-      left: 50%;
-      border-left: 2px solid #0b3c5d;
-    }
-
-    /* solo hijo: sin líneas */
-    .tree li:only-child::before,
-    .tree li:only-child::after {
-      display: none;
-    }
-
-    .tree li:only-child {
-      padding-top: 0;
-    }
-
-    /* primer y último hijo: quitar sobrantes */
-    .tree li:first-child::before,
-    .tree li:last-child::after {
-      border: 0 none;
-    }
-
-    .tree li:last-child::before {
-      border-right: 2px solid #0b3c5d;
-    }
-
-    .tree li:first-child::after {
-      border-left: 2px solid #0b3c5d;
-    }
-
-    /* línea vertical que baja hacia los hijos */
-    .tree ul ul::before {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 50%;
-      border-left: 2px solid #0b3c5d;
-      width: 0;
-      height: 20px;
-    }
-
-    /* ---------- CAJAS ---------- */
-
+    /* Cajas */
     .box {
       background: #ffffff;
       border-radius: 10px;
-      padding: .7rem .9rem;
-      min-width: 190px;
-      max-width: 230px;
-      text-align: center;
+      padding: .7rem 1rem;
+      width: 100%;
+      max-width: 380px;
       box-shadow: 0 6px 14px rgba(15, 23, 42, 0.12);
       border: 2px solid #0b3c5d10;
-      display: inline-block;
+      display: flex;
+      align-items: center;
+      gap: .5rem;
+      cursor: default;
+      line-height: 1.35;
+      word-wrap: break-word;
       white-space: normal;
+      text-align: left;
+    }
+
+    .box.level2.ceo-side,
+    .box.level2.sub-side {
+      width: 320px;
+      max-width: 100%;
+    }
+
+    .box.level3 {
+      width: 240px;
+      max-width: 100%;
+      padding: .6rem .9rem;
+      font-size: .85rem;
+      background: #f9fafb;
+    }
+
+    .box.level3 h3 {
+      font-size: .85rem;
+    }
+
+    .box-text {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      flex: 1;
     }
 
     .box h3 {
-      margin: 0 0 .25rem 0;
+      margin: 0 0 .15rem 0;
       font-size: .9rem;
       font-family: "Avant Garde", "Century Gothic", Arial, sans-serif;
       color: #0b3c5d;
     }
 
-    .box span {
-      display: block;
-      font-size: .75rem;
+    .box span.subtitle {
+      font-size: .78rem;
       color: #4b5563;
     }
 
-    /* Tokken arriba */
     .box.company {
       background: linear-gradient(135deg, #0b3c5d, #127c56);
       color: #ffffff;
       border: none;
+      justify-content: center;
+      width: auto;
+      max-width: 400px;
+      margin-left: auto;
+      margin-right: auto;
     }
 
     .box.company h3,
@@ -139,7 +148,6 @@
       color: #ffffff;
     }
 
-    /* nivel inmediato a Tokken (CEO y Subgerencia) */
     .box.level1 {
       background: #0b3c5d;
       color: #ffffff;
@@ -151,7 +159,6 @@
       color: #ffffff;
     }
 
-    /* directores / coordinaciones principales */
     .box.level2.ceo-side {
       border-left: 4px solid #1f6fb2;
     }
@@ -160,16 +167,48 @@
       border-left: 4px solid #278f3f;
     }
 
-    /* cargos de nivel bajo */
-    .box.level3 {
-      background: #f9fafb;
+    /* Iconos desplegables */
+    .toggle-icon {
+      width: 1.2rem;
+      height: 1.2rem;
+      border-radius: 999px;
+      border: 1px solid rgba(15, 23, 42, 0.25);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: .75rem;
+      flex-shrink: 0;
+      background: #ffffff;
+      color: #0b3c5d;
     }
 
-    @media (max-width: 700px) {
+    .box.company .toggle-icon,
+    .box.level1 .toggle-icon {
+      background: #ffffff;
+      color: #0b3c5d;
+    }
+
+    .box.leaf .toggle-icon {
+      visibility: hidden;
+    }
+
+    .box.clickable {
+      cursor: pointer;
+    }
+
+    .box.clickable:hover {
+      box-shadow: 0 8px 18px rgba(15, 23, 42, 0.2);
+      transform: translateY(-1px);
+      transition: box-shadow .15s ease, transform .15s ease;
+    }
+
+    /* Responsive */
+    @media (max-width: 600px) {
       body {
         padding: 1rem .5rem;
       }
+
       .box {
-        min-width: 180px;
+        max-width: 100%;
       }
     }
